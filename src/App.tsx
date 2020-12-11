@@ -24,8 +24,8 @@ import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
+      <ColorModeSwitcher pos="absolute" top={4} right={6} />
       <Grid minH="100vh" py={3} px={6} placeItems="center">
-        <ColorModeSwitcher justifySelf="flex-end" alignSelf="flex-start" />
         <VStack spacing={5} mx="auto">
           <Heading as="h1" size="2xl" lineHeight="64px">
             Hello!&#128512; I'm <br /> Emmanuel Nwachukwu
@@ -34,7 +34,7 @@ export const App = () => (
             color="darkgray"
             maxW="460px"
             p={4}
-            fontSize={{ base: "18px", md: "22px", lg: "28px" }}
+            fontSize={{ base: "18px", md: "22px", lg: "24px" }}
           >
             Software developer who is in love with the Frontend stack and lives
             in Lagos, Nigeria.{" "}
