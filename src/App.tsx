@@ -65,13 +65,13 @@ export const App = () => (
               href="https://linkedin.com/in/nwachukwuemmauel"
               isExternal
             >
-              <Icon as={FaLinkedinIn} w={6} h={6} color="#0077B5" />{" "}
+              <Icon as={FaLinkedinIn} w={6} h={6} color="teal.500" />{" "}
             </Link>
             <Link href="https://github.com/nwachiii" isExternal>
               <Icon as={FaGithub} w={8} h={8} />
             </Link>
             <Link href="https://twitter.com/nwachiii" isExternal>
-              <Icon as={FaTwitter} w={8} h={8} color="#1DA1F2" />
+              <Icon as={FaTwitter} w={8} h={8} color="teal.500" />
             </Link>
           </HStack>
         </VStack>
