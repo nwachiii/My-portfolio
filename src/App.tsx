@@ -10,6 +10,7 @@ import {
   Grid,
   Icon,
   Link,
+  Tooltip,
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
@@ -57,22 +58,28 @@ export const App = () => (
             <Button>My Projects</Button>
           </HStack>
           <HStack spacing={[4, 6, 8, 10]}>
-            <Link
-              bg="white"
-              rounded={4}
-              px={1}
-              pb={1}
-              href="https://linkedin.com/in/nwachukwuemmauel"
-              isExternal
-            >
-              <Icon as={FaLinkedinIn} w={6} h={6} color="teal.500" />{" "}
-            </Link>
-            <Link href="https://github.com/nwachiii" isExternal>
-              <Icon as={FaGithub} w={8} h={8} />
-            </Link>
-            <Link href="https://twitter.com/nwachiii" isExternal>
-              <Icon as={FaTwitter} w={8} h={8} color="teal.500" />
-            </Link>
+            <Tooltip label="LinkedIn" aria-label="A tooltip">
+              <Link
+                bg="white"
+                rounded={4}
+                px={1}
+                pb={1}
+                href="https://linkedin.com/in/nwachukwuemmauel"
+                isExternal
+              >
+                <Icon as={FaLinkedinIn} w={6} h={6} color="teal.500" />{" "}
+              </Link>
+            </Tooltip>
+            <Tooltip label="Github" aria-label="A tooltip">
+              <Link href="https://github.com/nwachiii" isExternal>
+                <Icon as={FaGithub} w={8} h={8} />
+              </Link>
+            </Tooltip>
+            <Tooltip label="Twitter" aria-label="A tooltip">
+              <Link href="https://twitter.com/nwachiii" isExternal>
+                <Icon as={FaTwitter} w={8} h={8} color="teal.500" />
+              </Link>
+            </Tooltip>
           </HStack>
         </VStack>
       </Grid>
