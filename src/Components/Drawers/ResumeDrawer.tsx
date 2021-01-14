@@ -10,8 +10,10 @@ import {
   Button,
   useDisclosure,
   Input,
+  Icon,
 } from "@chakra-ui/react";
 import { ContactMeModal } from "../Modals/ContactMeModal";
+import { HiCollection } from "react-icons/hi";
 
 export const Resume = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,9 +24,12 @@ export const Resume = () => {
       <Button onClick={onOpen}>Work History</Button>
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size={size}>
         <DrawerOverlay>
-          <DrawerContent bgColor="lightgray">
+          <DrawerContent>
             <DrawerCloseButton _focus={{ outline: "none", border: "none" }} />
-            <DrawerHeader>R E S U M E</DrawerHeader>
+            <DrawerHeader>
+              <Icon as={HiCollection} w={8} h={8} mr={1} color="teal.500" />R E
+              S U M E
+            </DrawerHeader>
 
             <DrawerBody>
               {/* My projects page content comes in here */}

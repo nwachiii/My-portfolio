@@ -9,10 +9,12 @@ import {
   DrawerCloseButton,
   Button,
   useDisclosure,
+  Icon,
 } from "@chakra-ui/react";
 
 import AllProjects from "../../Pages/Projects/AllProjects";
 import { ContactMeModal } from "../Modals/ContactMeModal";
+import { HiBriefcase } from "react-icons/hi";
 
 export const MyProjects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -25,7 +27,10 @@ export const MyProjects = () => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton _focus={{ outline: "none", border: "none" }} />
-            <DrawerHeader>P R O J E C T S</DrawerHeader>
+            <DrawerHeader>
+              <Icon as={HiBriefcase} w={8} h={8} mr={1} color="teal.500" />P R O
+              J E C T S
+            </DrawerHeader>
 
             <DrawerBody>
               {/* My projects page content comes in here */}

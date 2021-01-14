@@ -1,4 +1,5 @@
 import * as React from "react";
+import { HiOutlineUser } from "react-icons/hi";
 import {
   useDisclosure,
   Link,
@@ -10,6 +11,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalContent,
+  Icon,
 } from "@chakra-ui/react";
 
 export const LearnMoreModal = () => {
@@ -30,7 +32,10 @@ export const LearnMoreModal = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>More About Me</ModalHeader>
+          <ModalHeader direction="row" borderBottomWidth="1px" mb={4}>
+            <Icon as={HiOutlineUser} w={8} h={7} mr={1} color="teal.500" />
+            MORE ABOUT ME...
+          </ModalHeader>
           <ModalCloseButton _focus={{ outline: "none", border: "none" }} />
           <ModalBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

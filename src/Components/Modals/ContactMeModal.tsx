@@ -28,7 +28,7 @@ export const ContactMeModal = () => {
       >
         <ModalOverlay />
         <ModalContent mx={[3, 6]}>
-          <ModalHeader>
+          <ModalHeader borderBottomWidth="1px" mb={4}>
             <Icon as={HiChatAlt} w={8} h={8} mr={1} color="teal.500" />
             <strong> Let's Talk!</strong>
           </ModalHeader>

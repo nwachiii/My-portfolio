@@ -8,6 +8,7 @@ export const ContactIcons = () => {
       <Tooltip label="send me a mail" aria-label="A tooltip">
         <Button leftIcon={<HiMail />} colorScheme="teal" variant="outline">
           <Link
+            as="a"
             _hover={{
               outline: "none",
               border: "none",
@@ -16,8 +17,7 @@ export const ContactIcons = () => {
               outline: "none",
               border: "none",
             }}
-            href="mailto:egreatness1@gmail.com"
-            isExternal
+            href="mailto: egreatness1@gmail.com"
           >
             Email
           </Link>
