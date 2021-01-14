@@ -5,7 +5,7 @@ import { Icon, Link, Tooltip } from "@chakra-ui/react";
 export const SocialMediaIcons = () => {
   return (
     <>
-      <Tooltip label="LinkedIn" aria-label="A tooltip">
+      <Tooltip label="linkedIn" aria-label="A tooltip">
         <Link
           bg="white"
           rounded={4}
@@ -17,12 +17,12 @@ export const SocialMediaIcons = () => {
           <Icon as={FaLinkedinIn} w={6} h={6} color="teal.500" />{" "}
         </Link>
       </Tooltip>
-      <Tooltip label="Github" aria-label="A tooltip">
+      <Tooltip label="github" aria-label="A tooltip">
         <Link href="https://github.com/nwachiii" isExternal>
           <Icon as={FaGithub} w={8} h={8} />
         </Link>
       </Tooltip>
-      <Tooltip label="Twitter" aria-label="A tooltip">
+      <Tooltip label="twitter" aria-label="A tooltip">
         <Link href="https://twitter.com/nwachiii" isExternal>
           <Icon as={FaTwitter} w={8} h={8} color="teal.500" />
         </Link>

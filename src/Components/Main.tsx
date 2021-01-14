@@ -1,15 +1,23 @@
 import * as React from "react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import { Heading, Box, Text, VStack, HStack, Grid } from "@chakra-ui/react";
+import { ColorModeSwitcher } from "../theme/ColorModeSwitcher";
+import {
+  Heading,
+  Box,
+  Text,
+  VStack,
+  HStack,
+  Grid,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
-import { LearnMoreModal } from "./Components/Modals/LearnMoreModal";
-import { MyProjects } from "./Components/Buttons/ProjectsDrawer";
-import { Resume } from "./Components/Buttons/ResumeDrawer";
-import { SocialMediaIcons } from "./Components/Icons/SocialMediaIcons";
+import { LearnMoreModal } from "./Modals/LearnMoreModal";
+import { MyProjects } from "./Buttons/ProjectsDrawer";
+import { Resume } from "./Buttons/ResumeDrawer";
+import { SocialMediaIcons } from "./Icons/SocialMediaIcons";
 
 export const Main = () => {
   return (
-    <Box textAlign="center" fontSize="xl">
+    <Box textAlign="center">
       <ColorModeSwitcher pos="absolute" top={4} right={6} />
 
       <Grid minH="100vh" px={6} placeItems="center">
@@ -28,10 +36,10 @@ export const Main = () => {
             in Lagos, Nigeria. <LearnMoreModal />
           </Text>
 
-          <HStack spacing={[4, 6, 8, 10]} mb={6}>
+          <SimpleGrid columns={[1, 2, 2]} spacing={[6, 8, 10]} mb={6}>
             <Resume />
             <MyProjects />
-          </HStack>
+          </SimpleGrid>
 
           <HStack spacing={[4, 6, 8, 10]}>
             <SocialMediaIcons />
