@@ -23,7 +23,7 @@ export const Resume = () => {
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size={size}>
         <DrawerOverlay>
           <DrawerContent bgColor="lightgray">
-            <DrawerCloseButton />
+            <DrawerCloseButton _focus={{ outline: "none", border: "none" }} />
             <DrawerHeader>R E S U M E</DrawerHeader>
 
             <DrawerBody>

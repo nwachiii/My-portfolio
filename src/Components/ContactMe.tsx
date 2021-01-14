@@ -1,14 +1,19 @@
 import * as React from "react";
-import { VStack } from "@chakra-ui/react";
+import { Text, VStack } from "@chakra-ui/react";
 import { SocialMediaIcons } from "./Icons/SocialMediaIcons";
 import { ContactIcons } from "./Icons/ContactIcons";
 
 export const ContactMe = () => {
   return (
     <div>
-      <VStack>
-        <SocialMediaIcons />
+      <VStack spacing={10} mb={4}>
+        <Text textAlign="left" fontSize={["md", "lg"]} isCentered>
+          Wondering if I would be a good culture fit at your company? or if I am
+          a good team player? (I am, by the way &#128540; ). Let's connect and
+          find out!
+        </Text>
         <ContactIcons />
+        <SocialMediaIcons />
       </VStack>
     </div>
   );

@@ -1,10 +1,10 @@
 import * as React from "react";
 import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
-import { Icon, Link, Tooltip } from "@chakra-ui/react";
+import { Icon, Link, Tooltip, HStack } from "@chakra-ui/react";
 
 export const SocialMediaIcons = () => {
   return (
-    <>
+    <HStack spacing={[3, 6]}>
       <Tooltip label="linkedIn" aria-label="A tooltip">
         <Link
           bg="white"
@@ -27,6 +27,6 @@ export const SocialMediaIcons = () => {
           <Icon as={FaTwitter} w={8} h={8} color="teal.500" />
         </Link>
       </Tooltip>
-    </>
+    </HStack>
   );
 };

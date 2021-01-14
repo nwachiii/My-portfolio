@@ -24,7 +24,7 @@ export const MyProjects = () => {
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={size}>
         <DrawerOverlay>
           <DrawerContent>
-            <DrawerCloseButton />
+            <DrawerCloseButton _focus={{ outline: "none", border: "none" }} />
             <DrawerHeader>P R O J E C T S</DrawerHeader>
 
             <DrawerBody>

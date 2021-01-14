@@ -31,7 +31,7 @@ export const LearnMoreModal = () => {
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>More About Me</ModalHeader>
-          <ModalCloseButton />
+          <ModalCloseButton _focus={{ outline: "none", border: "none" }} />
           <ModalBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

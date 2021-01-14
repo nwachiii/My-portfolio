@@ -1,9 +1,4 @@
-// theme.js
 import { extendTheme } from "@chakra-ui/react";
-
-// type prop = {
-//   props: React.ReactNode;
-// };
 
 export const theme = extendTheme({
   components: {

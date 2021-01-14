@@ -1,19 +1,49 @@
 import * as React from "react";
-import { FaTwitter, FaGithub } from "react-icons/fa";
-import { Icon, Link, Tooltip, HStack } from "@chakra-ui/react";
+import { HiMail, HiPhoneIncoming } from "react-icons/hi";
+import { Link, Tooltip, HStack, Button } from "@chakra-ui/react";
 
 export const ContactIcons = () => {
   return (
-    <HStack>
-      <Tooltip label="send a mail" aria-label="A tooltip">
-        <Link href="https://github.com/nwachiii" isExternal>
-          <Icon as={FaGithub} w={8} h={8} />
-        </Link>
+    <HStack spacing={[3, 5]}>
+      <Tooltip label="send me a mail" aria-label="A tooltip">
+        <Button leftIcon={<HiMail />} colorScheme="teal" variant="outline">
+          <Link
+            _hover={{
+              outline: "none",
+              border: "none",
+            }}
+            _focus={{
+              outline: "none",
+              border: "none",
+            }}
+            href="mailto:egreatness1@gmail.com"
+            isExternal
+          >
+            Email
+          </Link>
+        </Button>
       </Tooltip>
       <Tooltip label="phone number" aria-label="A tooltip">
-        <Link href="https://twitter.com/nwachiii" isExternal>
-          <Icon as={FaTwitter} w={8} h={8} color="teal.500" />
-        </Link>
+        <Button
+          leftIcon={<HiPhoneIncoming />}
+          colorScheme="teal"
+          variant="solid"
+        >
+          <Link
+            _hover={{
+              outline: "none",
+              border: "none",
+            }}
+            _focus={{
+              outline: "none",
+              border: "none",
+            }}
+            href="tel:+2348166111593"
+            isExternal
+          >
+            Call Me
+          </Link>
+        </Button>
       </Tooltip>
     </HStack>
   );
