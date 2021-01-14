@@ -4,7 +4,7 @@ import { Icon, Link, Tooltip, HStack } from "@chakra-ui/react";
 
 export const SocialMediaIcons = () => {
   return (
-    <HStack spacing={[3, 6]}>
+    <HStack spacing={[6, 8, 10]}>
       <Tooltip label="linkedIn" aria-label="A tooltip">
         <Link
           bg="white"

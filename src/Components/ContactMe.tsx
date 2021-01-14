@@ -6,8 +6,8 @@ import { ContactIcons } from "./Icons/ContactIcons";
 export const ContactMe = () => {
   return (
     <div>
-      <VStack spacing={10} mb={4}>
-        <Text textAlign="left" fontSize={["md", "lg"]} isCentered>
+      <VStack spacing={9} mb={4}>
+        <Text textAlign="left" fontSize={["md", "lg", "xl"]} px={4} isCentered>
           Wondering if I would be a good culture fit at your company? or if I am
           a good team player? (I am, by the way &#128540; ). Let's connect and
           find out!

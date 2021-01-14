@@ -11,8 +11,8 @@ import {
 } from "@chakra-ui/react";
 
 import { LearnMoreModal } from "./Modals/LearnMoreModal";
-import { MyProjects } from "./Buttons/ProjectsDrawer";
-import { Resume } from "./Buttons/ResumeDrawer";
+import { MyProjects } from "./Drawers/ProjectsDrawer";
+import { Resume } from "./Drawers/ResumeDrawer";
 import { SocialMediaIcons } from "./Icons/SocialMediaIcons";
 
 export const Main = () => {
@@ -32,7 +32,7 @@ export const Main = () => {
             p={4}
             fontSize={{ base: "18px", md: "22px", lg: "24px" }}
           >
-            Software developer who is in love with the Frontend stack and lives
+            A Frontend Engineer who specializes in React development and lives
             in Lagos, Nigeria. <LearnMoreModal />
           </Text>
 
