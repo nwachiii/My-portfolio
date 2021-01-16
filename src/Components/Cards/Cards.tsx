@@ -16,7 +16,7 @@ export function Cards() {
   // const { projectTitle, projectDesc, projectTools, cardIcon} = props;
   return (
     <>
-      <Box className="card__wrapper" my={[2, 2, 4, 8]}>
+      <Box className="card__wrapper" my={[1, 2, 4, 8]}>
         <Box className="card__box">
           <VStack className="glass-effect" spacing={[4, 6]}>
             <Heading as="h2" fontSize={["lg", "xl", "2xl"]}>

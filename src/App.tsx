@@ -15,8 +15,8 @@ export const App = () => (
       spacingX="20px"
       spacingY="40px"
       justifyContent="center"
-      p={[4, 6, 8, 10]}
-      mb={8}
+      p={[1, 6, 8, 10]}
+      my={10}
     >
       <Cards />
       <Cards />

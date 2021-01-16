@@ -24,7 +24,7 @@
   display: inline-block;
   background: rgba(255, 255, 255, 0.05);
   padding: 2em 3em;
-  width: 100%;
+  width: auto;
   height: auto;
   border-radius: 10px;
   position: relative;
@@ -57,13 +57,9 @@
   .big__circle {
     display: none;
   }
-
-  .card__wrapper {
-    padding: 0 1em;
-  }
   .glass-effect {
     width: auto;
-    padding: 2em;
+    padding: 2em 1em;
     backdrop-filter: blur(115px);
     box-shadow: inset -6px -6px 10px #172027,
       inset 6px 6px 10px rgba(21, 24, 26, 0.4);
