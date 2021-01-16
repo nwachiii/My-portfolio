@@ -1,0 +1,71 @@
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.card__box {
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.big__circle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 320px;
+  height: 320px;
+  background: rgba(155, 223, 170, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+.glass-effect {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2em 3em;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(45px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 68, 50, 0.03);
+}
+/* 
+@media screen and (max-width: 768px) {
+  .card__box {
+    position: relative;
+    padding: 0 1em;
+  }
+  .big__circle {
+    top: 0%;
+    left: 13%;
+    width: 270px;
+    height: 300px;
+  }
+  .glass-effect {
+    width: 300px;
+    height: 320px;
+    padding: 2em;
+  }
+}*/
+
+@media screen and (max-width: 426px) {
+  .big__circle {
+    display: none;
+  }
+
+  .card__wrapper {
+    padding: 0 1em;
+  }
+  .glass-effect {
+    width: auto;
+    padding: 2em;
+    backdrop-filter: blur(115px);
+    box-shadow: inset -6px -6px 10px #172027,
+      inset 6px 6px 10px rgba(21, 24, 26, 0.4);
+  }
+}
