@@ -37,10 +37,14 @@ export const MyProjects = () => {
               <AllProjects />
             </DrawerBody>
 
-            <DrawerFooter borderTopWidth="1px" justifyContent="space-around">
+            <DrawerFooter
+              borderTopWidth="1px"
+              justifyContent={["center", "space-between", null, "space-around"]}
+              flexWrap="wrap"
+            >
               <ContactMeModal />
 
-              <Button variant="outline" mr={3} onClick={onClose}>
+              <Button variant="outline" mr={[0, 3]} onClick={onClose}>
                 Back to Home
               </Button>
             </DrawerFooter>

@@ -52,8 +52,8 @@
   .glass-effect {
     width: auto;
     padding: 2em 1em;
-    backdrop-filter: blur(115px);
-    box-shadow: inset -6px -6px 10px #172027,
-      inset 6px 6px 10px rgba(21, 24, 26, 0.4);
+    box-shadow: inset -6px -6px 40px;
+
+    /* inset 6px 6px 10px rgba(11, 16, 20, 0.329); */
   }
 }

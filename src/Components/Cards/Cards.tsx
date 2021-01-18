@@ -6,6 +6,7 @@ import {
   Icon,
   Link,
   SimpleGrid,
+  Tag,
   Text,
   Tooltip,
   VStack,
@@ -23,15 +24,19 @@ export function Cards() {
             <Heading as="h2" fontSize={["lg", "xl", "2xl"]}>
               P R O J E C T
             </Heading>
-            <Text fontSize={["lg", "lg", "xl"]}>
+            <Text fontSize={["md", "lg", "xl"]} px={3}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis
               mpedit laborum eum omnis dolores minus necessitatibus quo libero
               ius, eligendi rerum.Facere illo cum, voluptate nisi harum iste
               velit excepturi.
             </Text>
-            <Text fontSize={["xs", "md", "lg"]}>
-              <strong>T O O L S : </strong> REACT, CHAKRA-UI, NETLIFY
-            </Text>
+            <HStack spacing={[1, 2, 3, 4]} flexWrap="wrap" mb={3}>
+              {["React", "Typescript", "Chakra", "NextJs"].map((stack) => (
+                <Tag size="md" variant="outline" colorScheme="teal" py={1}>
+                  {stack}
+                </Tag>
+              ))}
+            </HStack>
             <HStack
               spacing={["2em", "4em", "6em"]}
               w="100%"
@@ -76,6 +81,7 @@ export const ProjectCards = () => {
       justifyContent="center"
       p={[1, 6, 8, 10]}
       mb={4}
+      mx={-5}
     >
       <Cards />
       <Cards />
