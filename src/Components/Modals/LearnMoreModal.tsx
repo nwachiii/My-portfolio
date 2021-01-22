@@ -12,11 +12,8 @@ import {
   ModalBody,
   ModalContent,
   Icon,
-  VStack,
-  Heading,
 } from "@chakra-ui/react";
 import AboutMe from "../../Pages/AboutMe";
-import Tools from "../Icons/Tools";
 // import Tools from "../Icons/Tools";
 
 export const LearnMoreModal = () => {
@@ -44,10 +41,10 @@ export const LearnMoreModal = () => {
           <ModalCloseButton _focus={{ outline: "none", border: "none" }} />
           <ModalBody>
             <AboutMe />
-            <VStack spacing={4}>
+            {/* <VStack spacing={4}>
               <Heading as="h3">Tech Stack</Heading>
               <Tools />
-            </VStack>
+            </VStack> */}
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="teal" mx="auto" onClick={onClose}>

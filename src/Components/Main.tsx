@@ -22,14 +22,15 @@ export const Main = () => {
 
       <Grid minH="100vh" px={6} placeItems="center">
         <VStack spacing={5} mx="auto">
-          <Heading as="h1" size="2xl" lineHeight="64px">
+          <Heading as="h1" size="2xl" lineHeight={["45px", "64px"]}>
             Hello!&#128512; I'm <br /> Emmanuel Nwachukwu
           </Heading>
 
           <Text
             color="light-gray"
             maxW="460px"
-            p={4}
+            p={[2, 2, 4]}
+            textAlign={["left", "center", "center"]}
             fontSize={{ base: "18px", md: "22px", lg: "24px" }}
           >
             A Frontend Engineer who specializes in React development and lives

@@ -20,11 +20,11 @@ export function Cards() {
     <>
       <Box className="card__wrapper" my={[1, 2, 10, 8]}>
         <Box className="card__box">
-          <VStack className="glass-effect" spacing={[4, 6]}>
+          <VStack className="glass-effect" spacing={[4, 6]} isCentered>
             <Heading as="h2" fontSize={["lg", "xl", "2xl"]}>
               P R O J E C T
             </Heading>
-            <Text fontSize={["md", "lg", "xl"]} px={3}>
+            <Text fontSize={["md", "lg", "xl"]} px={3} textAlign="center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis
               mpedit laborum eum omnis dolores minus necessitatibus quo libero
               ius, eligendi rerum.Facere illo cum, voluptate nisi harum iste
