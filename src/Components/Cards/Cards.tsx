@@ -23,13 +23,13 @@ export const ProjectCards = ({projects}) => {
       justifyContent="center"
       p={[1, 6, 8, 10]}
       mb={4}
-      mx={-5}
+      mx={[0, -5, -5]}
     >
         {projects.map((project) => (
-      <Box className="card__wrapper" my={[1, 2, 10, 8]}>
+      <Box className="card__wrapper" mb={[4, 2, 10, 8]}>
           <Box key={project._id} className="card__box">
             <VStack className="glass-effect" spacing={[4, 6]}>
-              <Heading as="h2" fontSize={["lg", "xl", "2xl"]}>
+              <Heading fontSize={["lg", "xl", "xl"]}>
                 {project.title}
               </Heading>
               <Text fontSize={["md", "lg", "xl"]} px={3}>
@@ -48,12 +48,12 @@ export const ProjectCards = ({projects}) => {
                 justifyContent="center"
               >
                 <Tooltip label="View Code" aria-label="A tooltip">
-                  <Link href={project.codeURL} isExternal>
+                  <Link href={project.codeUrl} isExternal>
                     <Icon as={HiOutlineCode} w={8} h={8} color="teal.500" />
                   </Link>
                 </Tooltip>
                 <Tooltip label="View Live" aria-label="A tooltip">
-                  <Link href={project.liveURL} isExternal>
+                  <Link href={project.liveUrl} isExternal>
                     <Icon as={HiOutlineEye} w={8} h={8} color="#9BDFAA" />
                   </Link>
                 </Tooltip>

@@ -1,5 +1,5 @@
-import { Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { Text, VStack } from "@chakra-ui/react";
 
 // All Tools, Skills, information a recruiter would love to see
 function AboutMe() {

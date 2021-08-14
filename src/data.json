@@ -2,11 +2,11 @@
   "projects": [
     {
       "_id": "1st-project",
-      "title": "Shopping Cart",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "stack": ["React", "Redux", "Heroku"],
-      "codeUrl": "https://github.com/nwachiii",
-      "LiveUrl": "https://github.com/nwachiii"
+      "title": "Modern Redux",
+      "description": "I contributed to building this web app used for marketing the Modern Redux book - An updated guide for writing Redux in 2021 and beyond. This book was written by Ohans Emmanuel, A Senior Software Engineer @Revolut",
+      "stack": ["React", "Redux", "Typescript"],
+      "codeUrl": "https://github.com/ohansemmanuel/modern-redux-site",
+      "liveUrl": "https://modernreduxjs.com/"
     },
     {
       "_id": "2nd-project",
@@ -14,7 +14,7 @@
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
       "stack": ["ReactAdmin", "Chakra-UI", "NextJs"],
       "codeUrl": "https://github.com/nwachiii",
-      "LiveUrl": "https://github.com/nwachiii"
+      "liveUrl": "https://github.com/nwachiii"
     },
     {
       "_id": "3rd-project",
@@ -22,7 +22,7 @@
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
       "stack": ["React", "Material", "Firebase"],
       "codeUrl": "https://github.com/nwachiii",
-      "LiveUrl": "https://github.com/nwachiii"
+      "liveUrl": "https://github.com/nwachiii"
     },
     {
       "_id": "4th-project",
@@ -38,7 +38,7 @@
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
       "stack": ["React", "Chakra-UI", "Typescript"],
       "codeUrl": "https://github.com/nwachiii",
-      "LiveUrl": "https://github.com/nwachiii"
+      "liveUrl": "https://github.com/nwachiii"
     },
     {
       "_id": "6th-project",
@@ -46,8 +46,7 @@
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
       "stack": ["Html", "CSS", "JavaScript"],
       "codeUrl": "https://github.com/nwachiii/nwachukwuemmanuel",
-      "LiveUrl": "https://nwachiii.github.io/nwachukwuemmanuel/"
+      "liveUrl": "https://nwachiii.github.io/nwachukwuemmanuel/"
     }
-
   ]
 }
