@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { HiOutlineCode, HiOutlineEye, HiThumbUp } from "react-icons/hi";
 import "./CardStyles.css";
+import ReadMoreReact from "read-more-react";
 
 export const ProjectCards = ({projects}) => {
   return (
@@ -25,22 +26,32 @@ export const ProjectCards = ({projects}) => {
       mb={4}
       mx={[0, -5, -5]}
     >
-        {projects.map((project) => (
-      <Box className="card__wrapper" mb={[4, 2, 10, 8]}>
+      {projects.map((project) => (
+        <Box className="card__wrapper" mb={[4, 2, 10, 8]} cursor="pointer">
           <Box key={project._id} className="card__box">
             <VStack className="glass-effect" spacing={[4, 6]}>
-              <Heading fontSize={["lg", "xl", "xl"]}>
-                {project.title}
-              </Heading>
+              <Heading fontSize={["lg", "xl", "xl"]}>{project.title}</Heading>
               <Text fontSize={["md", "lg", "xl"]} px={3}>
-                {project.description}
+                {}
+                <ReadMoreReact
+                  text={project.description}
+                  min={45}
+                  ideal={60}
+                  max={100}
+                  readMoreText={
+                    <small>
+                      <i>see more...</i>
+                    </small>
+                  }
+                />
               </Text>
+
               <HStack spacing={[1, 2, 3, 4]} flexWrap="wrap" mb={3}>
-                  {(project.stack).map((stack) => (
-                    
-                    <Tag size="md" variant="outline" colorScheme="teal" py={1}>
-                 {stack} </Tag>
-                  ))}
+                {project.stack.map((stack) => (
+                  <Tag size="md" variant="outline" colorScheme="teal" py={1}>
+                    {stack}{" "}
+                  </Tag>
+                ))}
               </HStack>
               <HStack
                 spacing={["2em", "4em", "6em"]}
@@ -72,8 +83,8 @@ export const ProjectCards = ({projects}) => {
             </VStack>
             <div className="big__circle"></div>
           </Box>
-      </Box>
-        ))}
+        </Box>
+      ))}
     </SimpleGrid>
   );
 };

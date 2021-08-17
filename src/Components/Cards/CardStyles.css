@@ -13,9 +13,9 @@
 .big__circle {
   position: absolute;
   top: 10%;
-  left: 10%;
-  width: 320px;
-  height: 320px;
+  left: 15%;
+  width: 300px;
+  height: 210px;
   background: rgba(155, 223, 170, 0.7);
   border-radius: 50%;
   z-index: -1;
@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 476px) {
   .big__circle {
     display: none;
   }

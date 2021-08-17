@@ -8,6 +8,7 @@ export const Footer = () => {
       py={3}
       justifyContent="center"
       borderTopWidth="1.2px"
+      h="6vh"
     >
       <Center>
         <Text>Built with &#128150; & &#127925; by Nwachiii</Text>

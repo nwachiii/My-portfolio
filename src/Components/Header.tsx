@@ -12,6 +12,8 @@ export const Header = () => {
       justifyContent="space-between"
       borderTopWidth="1.2px"
       maxW="90%"
+      h="10vh"
+      
       mx="auto"
     >
       <Link to="/">

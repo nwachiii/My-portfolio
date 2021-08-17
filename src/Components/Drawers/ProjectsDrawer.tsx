@@ -5,7 +5,6 @@ import {
   Drawer,
   DrawerBody,
   DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
@@ -14,17 +13,22 @@ import {
   useMediaQuery,
   useBoolean,
   Icon,
-  Text,
   Heading,
   Stack,
   Flex,
   VStack,
+  StackDivider,
 } from "@chakra-ui/react";
 
-import AllProjects from "../../Pages/Projects/AllProjects";
 import { ContactMeModal } from "../Modals/ContactMeModal";
 import { HiBriefcase } from "react-icons/hi";
 import { VscChevronDown, VscChevronRight } from "react-icons/vsc";
+import { ProjectCards } from "../Cards/Cards";
+import {
+  clientProjectDetails,
+  clonedProjectDetails,
+  personalProjectDetails,
+} from "../../data";
 
 export const MyProjects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -37,7 +41,8 @@ export const MyProjects = () => {
   return (
     <>
       <Button onClick={onOpen}>My Projects</Button>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={size}>
+
+      <Drawer isOpen={isOpen} placement="top" onClose={onClose} size={size}>
         <DrawerOverlay>
           <DrawerContent>
             <Flex
@@ -47,7 +52,7 @@ export const MyProjects = () => {
               px={4}
             >
               <Heading
-                fontSize={["lg", "2xl", "2xl"]}
+                fontSize={["md", "2xl", "2xl"]}
                 my={3}
                 justifySelf="flex-start"
                 textAlign="center"
@@ -70,15 +75,24 @@ export const MyProjects = () => {
               )}
             </Flex>
             <DrawerCloseButton _focus={{ outline: "none", border: "none" }} />
-            <DrawerHeader></DrawerHeader>
 
             <DrawerBody>
-              <VStack>
+              <VStack
+                mb="70px"
+                divider={<StackDivider borderColor="gray.200" />}
+                mt="60px"
+              >
                 <Flex cursor="pointer" onClick={setClientProjects.toggle}>
-                  <Icon as={HiBriefcase} w={5} h={8} mr={1} color="teal.500" />
-                  <Text letterSpacing=".2em" mt=".3em">
+                  <Icon as={HiBriefcase} w={5} h={8} mr={3} color="teal.500" />
+
+                  <Heading
+                    fontSize={["md", "2xl", "2xl"]}
+                    justifySelf="flex-start"
+                    textAlign="center"
+                    letterSpacing={["3px", ".2em", ".4em"]}
+                  >
                     CLIENT PROJECTS
-                  </Text>
+                  </Heading>
                   {clientProjects ? (
                     <Icon
                       as={VscChevronDown}
@@ -98,14 +112,25 @@ export const MyProjects = () => {
                   )}
                 </Flex>
                 {/* My projects page content comes in here */}
-                {clientProjects ? <AllProjects /> : null}
+                {clientProjects ? (
+                  <ProjectCards projects={clientProjectDetails} />
+                ) : null}
               </VStack>
-              <VStack>
+              <VStack
+                my="70px"
+                divider={<StackDivider borderColor="gray.200" />}
+              >
                 <Flex cursor="pointer" onClick={setClonedProjects.toggle}>
-                  <Icon as={HiBriefcase} w={5} h={8} mr={1} color="teal.500" />
-                  <Text letterSpacing=".2em" mt=".3em">
+                  <Icon as={HiBriefcase} w={5} h={8} mr={3} color="teal.500" />
+
+                  <Heading
+                    fontSize={["md", "2xl", "2xl"]}
+                    justifySelf="flex-start"
+                    textAlign="center"
+                    letterSpacing={["3px", ".2em", ".4em"]}
+                  >
                     CLONED WEB APPS
-                  </Text>
+                  </Heading>
                   {clonedProjects ? (
                     <Icon
                       as={VscChevronDown}
@@ -125,14 +150,25 @@ export const MyProjects = () => {
                   )}
                 </Flex>
                 {/* My projects page content comes in here */}
-                {clonedProjects ? <AllProjects /> : null}
+                {clonedProjects ? (
+                  <ProjectCards projects={clonedProjectDetails} />
+                ) : null}
               </VStack>
-              <VStack>
+              <VStack
+                my="70px"
+                divider={<StackDivider borderColor="gray.200" />}
+              >
                 <Flex cursor="pointer" onClick={setPersonalProjects.toggle}>
-                  <Icon as={HiBriefcase} w={5} h={8} mr={1} color="teal.500" />
-                  <Text letterSpacing=".2em" mt=".3em">
+                  <Icon as={HiBriefcase} w={5} h={8} mr={3} color="teal.500" />
+
+                  <Heading
+                    fontSize={["md", "2xl", "2xl"]}
+                    justifySelf="flex-start"
+                    textAlign="center"
+                    letterSpacing={["3px", ".2em", ".4em"]}
+                  >
                     PERSONAL PROJECTS
-                  </Text>
+                  </Heading>
                   {personalProjects ? (
                     <Icon
                       as={VscChevronDown}
@@ -152,18 +188,26 @@ export const MyProjects = () => {
                   )}
                 </Flex>
                 {/* My projects page content comes in here */}
-                {personalProjects ? <AllProjects /> : null}
+                {personalProjects ? (
+                  <ProjectCards projects={personalProjectDetails} />
+                ) : null}
               </VStack>
             </DrawerBody>
 
             <DrawerFooter
               borderTopWidth="1px"
               justifyContent={["center", "space-between", null, "space-around"]}
+              alignItems="space-between"
               flexWrap="wrap"
             >
               <ContactMeModal />
 
-              <Button variant="outline" mr={[0, 3]} onClick={onClose}>
+              <Button
+                variant="outline"
+                mr={[0, 3]}
+                ml={[3, 0]}
+                onClick={onClose}
+              >
                 Back to Home
               </Button>
             </DrawerFooter>

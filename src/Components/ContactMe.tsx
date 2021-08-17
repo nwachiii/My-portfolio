@@ -10,9 +10,8 @@ export const ContactMe = () => {
     <div>
       <VStack spacing={9} mb={5}>
         <Text textAlign="left" fontSize={["md", "lg", "xl"]} px={4} isCentered>
-          Wondering if I would be a good culture fit at your company? or if I am
-          a good team player? (I am, by the way &#128540; ). Let's connect and
-          find out!
+          What excites me the most is shipping great stuff that makes livelihood easier. &#128540; <br/>
+          Looking forward to speaking with you!
         </Text>
         <ContactIcons />
         <SocialMediaIcons />
