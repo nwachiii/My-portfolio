@@ -23,36 +23,52 @@ export const Main = () => {
       w="100%"
     >
       <AnimatePresence>
-          <motion.div
-            initial={{ x: 300, opacity: 0 }}
-            animate={{ x: 0, opacity: 1, scale: 1 }}
-            exit={{ x: -300, opacity: 0}}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 50,
-            }}
-          >
-            <VStack spacing={5} mx="auto">
+        <motion.div
+          initial={{ x: 500, opacity: 0, scale: 0.5 }}
+          animate={{ x: 0, opacity: 1, scale: 1 }}
+          exit={{ x: -300, opacity: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 50,
+            delay: 1,
+          }}
+        >
+          <VStack spacing={5} mx="auto">
+            <motion.div
+              initial={{ y: -600, opacity: 0 }}
+              animate={{ y: 0, opacity: 1, scale: 1 }}
+              exit={{ y: -300, opacity: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 50,
+              }}
+            >
               <Heading as="h1" size="2xl" lineHeight="64px">
                 Hello!&#128512; I'm <br /> Emmanuel Nwachukwu
               </Heading>
+            </motion.div>
 
-              <Text
-                color="light-gray"
-                maxW="460px"
-                p={4}
-                fontSize={{ base: "18px", md: "22px", lg: "24px" }}
+            <Text
+              color="light-gray"
+              maxW="460px"
+              p={4}
+              fontSize={{ base: "18px", md: "22px", lg: "24px" }}
+            >
+              A Frontend Engineer who specializes in React development and lives
+              in Lagos, Nigeria.
+              <Link to="/about">
+                <Text color="teal.500">Learn More</Text>
+              </Link>
+            </Text>
+
+            <SimpleGrid columns={[1, 2, 2]} spacing={[6, 8, 10]} mb={6}>
+              <motion.div
+                whileHover={{ scale: 1.25 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                A Frontend Engineer who specializes in React development and
-                lives in Lagos, Nigeria.
-                <Link to="/about">
-                  <Text color="teal.500">Learn More</Text>
-                </Link>
-              </Text>
-
-              <SimpleGrid columns={[1, 2, 2]} spacing={[6, 8, 10]} mb={6}>
-                <Button>
+                <Button outline="none">
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -61,14 +77,26 @@ export const Main = () => {
                     Resume
                   </a>
                 </Button>
-                <MyProjects />
-              </SimpleGrid>
+              </motion.div>
+              <MyProjects />
+            </SimpleGrid>
 
-              <HStack spacing={[4, 6, 8, 10]}>
+            <HStack spacing={[4, 6, 8, 10]}>
+              <motion.div
+                initial={{ y: 1000, opacity: 0 }}
+                animate={{ y: 0, opacity: 1, scale: 1 }}
+                exit={{ y: -300, opacity: 0 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 50,
+                }}
+              >
                 <SocialMediaIcons />
-              </HStack>
-            </VStack>
-          </motion.div>
+              </motion.div>
+            </HStack>
+          </VStack>
+        </motion.div>
       </AnimatePresence>
     </Flex>
   );

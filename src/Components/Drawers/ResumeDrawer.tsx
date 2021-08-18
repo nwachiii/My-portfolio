@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { ContactMeModal } from "../Modals/ContactMeModal";
 import { HiCollection } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 export const Resume = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -21,7 +22,12 @@ export const Resume = () => {
 
   return (
     <>
-      <Button onClick={onOpen}>Work History</Button>
+      <motion.div
+        whileHover={{ scale: 1.25 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <Button onClick={onOpen}>Work History</Button>
+      </motion.div>
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size={size}>
         <DrawerOverlay>
           <DrawerContent>

@@ -7,6 +7,7 @@ import { Footer } from "./Components/Footer";
 import { Header } from "./Components/Header";
 import { Main } from "./Pages/Main";
 import AboutMe from "./Pages/AboutMe";
+// import { motion } from "framer-motion";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -16,7 +17,9 @@ export const App = () => (
       <Switch>
         <Flex h="84vh">
           <Route exact path="/" component={Main} />
-          <Route exact path="/about" component={AboutMe} />
+
+         
+            <Route exact path="/about" component={AboutMe} />
         </Flex>
       </Switch>
       <Footer />
