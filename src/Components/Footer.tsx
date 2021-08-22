@@ -6,6 +6,7 @@ export const Footer = () => {
     <Flex
       color="light-gray"
       py={3}
+      mt={8}
       justifyContent="center"
       borderTopWidth="1.2px"
       h="6vh"

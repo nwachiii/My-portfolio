@@ -32,7 +32,6 @@ export const ProjectCards = ({projects}) => {
             <VStack className="glass-effect" spacing={[4, 6]}>
               <Heading fontSize={["lg", "xl", "xl"]}>{project.title}</Heading>
               <Text fontSize={["md", "lg", "xl"]} px={3}>
-                {}
                 <ReadMoreReact
                   text={project.description}
                   min={45}

@@ -21,6 +21,8 @@ export const Main = () => {
       justifyContent="center"
       textAlign="center"
       w="100%"
+      h="84vh"
+      mb={"-2em"}
     >
       <AnimatePresence>
         <motion.div
@@ -46,18 +48,22 @@ export const Main = () => {
               }}
             >
               <Heading as="h1" size="2xl" lineHeight="64px">
-                Hello!&#128512; I'm <br /> Emmanuel Nwachukwu
+                <Text color="lightgray">
+                  Hello!&#128512; I'm <br />
+                </Text>
+                Emmanuel Nwachukwu
               </Heading>
             </motion.div>
 
             <Text
-              color="light-gray"
+              color="lightgray"
               maxW="460px"
               p={4}
               fontSize={{ base: "18px", md: "22px", lg: "24px" }}
             >
-              A Frontend Engineer who specializes in React development and lives
-              in Lagos, Nigeria.
+              A Frontend Engineer whose goal is to create a stellar user
+              experience, smooth user interface, and straightforward internal
+              structures for a given product...
               <Link to="/about">
                 <Text color="teal.500">Learn More</Text>
               </Link>

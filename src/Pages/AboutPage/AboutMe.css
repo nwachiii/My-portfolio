@@ -1,0 +1,66 @@
+.sections-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.sectionEven {
+  flex-direction: row-reverse;
+}
+
+
+.image-wrap {
+  max-width: 470px;
+  max-height: 450px;
+  width: 100%;
+  height: auto;
+  border: .2px solid teal;
+  border-radius: 15px;
+  object-fit: contain;
+  margin: 2em auto 0.5em;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  align-self: stretch;
+  justify-self: stretch;
+  border-radius: inherit;
+}
+
+.text-wrap {
+  max-width: 500px;
+  width: 100%;
+  /* word-wrap: break-word; */
+  text-align: left;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 2em;
+  margin: 2em auto;
+  word-spacing: 3px;
+  letter-spacing: 1.7px;
+}
+
+br {
+  line-height: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  .sections-wrap {
+    margin: -2.5em auto;
+  }
+  .text-wrap {
+    font-size: 16px;
+  }
+}

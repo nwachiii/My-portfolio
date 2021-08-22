@@ -13,12 +13,14 @@ export const Header = () => {
     >
       <Flex
         color="dark-gray"
-        py={3}
+        p={3}
+        mt={2}
         justifyContent="space-between"
         alignItems="flex-end"
-        borderBottomWidth="0.1px"
+        borderWidth=" 0 0.1px 0.1px 0.1px"
+        borderRadius="30px"
         maxW="90%"
-        h="8vh"
+        h="8%"
         mx="auto"
       >
         <Link to="/">

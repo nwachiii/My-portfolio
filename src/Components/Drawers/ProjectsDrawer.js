@@ -17,7 +17,6 @@ import {
   Stack,
   Flex,
   VStack,
-  StackDivider,
 } from "@chakra-ui/react";
 
 import { ContactMeModal } from "../Modals/ContactMeModal";
@@ -41,9 +40,13 @@ export const MyProjects = () => {
 
   return (
     <>
-      <motion.div whileHover={{scale: 1.25 }}
-      transition={{type:'spring', stiffness: 300}}>
-        <Button onClick={onOpen} outline="none">My Projects</Button>
+      <motion.div
+        whileHover={{ scale: 1.25 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <Button onClick={onOpen} outline="none">
+          My Projects
+        </Button>
       </motion.div>
 
       <Drawer isOpen={isOpen} placement="top" onClose={onClose} size={size}>
@@ -85,11 +88,7 @@ export const MyProjects = () => {
             </Flex>
 
             <DrawerBody>
-              <VStack
-                mb="70px"
-                divider={<StackDivider borderColor="gray.200" />}
-                mt="60px"
-              >
+              <VStack mb="70px" mt="60px">
                 <motion.div
                   whileTap={{ scale: 0.8 }}
                   initial={{ x: "-100vw" }}
@@ -117,6 +116,7 @@ export const MyProjects = () => {
                     >
                       CLIENT PROJECTS
                     </Heading>
+
                     {clientProjects ? (
                       <Icon
                         as={VscChevronDown}
@@ -137,14 +137,22 @@ export const MyProjects = () => {
                   </Flex>
                 </motion.div>
                 {/* My projects page content comes in here */}
+
                 {clientProjects ? (
-                  <ProjectCards projects={clientProjectDetails} />
+                  <motion.div
+                    initial={{ x: "60%", opacity: "0", scale: "0.4" }}
+                    animate={{ x: 0, opacity: "1", scale: "1" }}
+                    transition={{
+                      type: "spring",
+                      stiffness: "20",
+                      delay: 0.2,
+                    }}
+                  >
+                    <ProjectCards projects={clientProjectDetails} />
+                  </motion.div>
                 ) : null}
               </VStack>
-              <VStack
-                my="70px"
-                divider={<StackDivider borderColor="gray.200" />}
-              >
+              <VStack my="70px">
                 <motion.div
                   whileTap={{ scale: 0.8 }}
                   initial={{ x: "-100vw" }}
@@ -192,14 +200,22 @@ export const MyProjects = () => {
                   </Flex>
                 </motion.div>
                 {/* My projects page content comes in here */}
+
                 {clonedProjects ? (
-                  <ProjectCards projects={clonedProjectDetails} />
+                  <motion.div
+                    initial={{ y: "-10%", opacity: "0", scale: "0.4" }}
+                    animate={{ y: 0, opacity: "1", scale: "1" }}
+                    transition={{
+                      type: "spring",
+                      stiffness: "20",
+                      delay: 0.2,
+                    }}
+                  >
+                    <ProjectCards projects={clonedProjectDetails} />
+                  </motion.div>
                 ) : null}
               </VStack>
-              <VStack
-                my="70px"
-                divider={<StackDivider borderColor="gray.200" />}
-              >
+              <VStack my="70px">
                 <motion.div
                   whileTap={{ scale: 0.8 }}
                   initial={{ x: "-100vw" }}
@@ -247,8 +263,19 @@ export const MyProjects = () => {
                   </Flex>
                 </motion.div>
                 {/* My projects page content comes in here */}
+
                 {personalProjects ? (
-                  <ProjectCards projects={personalProjectDetails} />
+                  <motion.div
+                    initial={{ y: "60vw", opacity: "0", scale: "0.4" }}
+                    animate={{ y: 0, opacity: "1", scale: "1" }}
+                    transition={{
+                      type: "spring",
+                      stiffness: "20",
+                      delay: 0.2,
+                    }}
+                  >
+                    <ProjectCards projects={personalProjectDetails} />
+                  </motion.div>
                 ) : null}
               </VStack>
             </DrawerBody>

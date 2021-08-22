@@ -15,7 +15,7 @@ import {
   VStack,
   Heading,
 } from "@chakra-ui/react";
-import AboutMe from "../../Pages/AboutMe";
+import AboutMe from "../../Pages/AboutPage/AboutMe";
 import Tools from "../Icons/Tools";
 // import Tools from "../Icons/Tools";
 
