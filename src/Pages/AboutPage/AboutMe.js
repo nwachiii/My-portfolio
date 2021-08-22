@@ -32,24 +32,29 @@ function AboutMe() {
             Hi there! I'm Emmanuel. I'm a huge proponent for breaking goals down
             into tiny bits, and that's why I love to write code in a
             modularized, maintainable and scalable pattern.
-            </p>
-            <br />
-            <p>
-              My first experience with programming was inspired by my mentor - Ohans Emmanuel. I had just gained admission to the University and so he encouraged me to learn to code. He was kind enough to teach me the rudiments of JavaScript and walk me through Freecodecamp.</p>
-              <br/>
-              <p>  
-              About a
-              year later, I took a Java course in the University which focused
-              on data structures and algorithms. I scored 74% and 90%
-              respectively for both semesters which was a major boost to my
-              confidence and improved my understanding of core programming concepts.
-            </p>
-              <br />
-            <p>
-              It occured to me: I had developed a vital skill to write programs
-              with the potential to solve a real life problem, so I went back to
-              finish up the curriculum & get the freecodecamp's frontend certification.
-            </p>
+          </p>
+          <br />
+          <p>
+            My first experience with programming was inspired by my mentor -
+            Ohans Emmanuel. I had just gained admission to the University and so
+            he encouraged me to learn to code. He was kind enough to teach me
+            the rudiments of JavaScript and walk me through Freecodecamp.
+          </p>
+          <br />
+          <p>
+            About a year later, I took a Java course in the University which
+            focused on data structures and algorithms. I scored 74% and 90%
+            respectively for both semesters which was a major boost to my
+            confidence and improved my understanding of core programming
+            concepts.
+          </p>
+          <br />
+          <p>
+            It occured to me: I had developed a vital skill to write programs
+            with the potential to solve a real life problem, so I went back to
+            finish up the curriculum & get the freecodecamp's frontend
+            certification.
+          </p>
         </div>
       </div>
 
@@ -92,9 +97,10 @@ function AboutMe() {
           </Heading>
           <i>
             <p>
-              I am a Frontend Developer specializing in React and JavaScript.I
-              spend my time experimenting and researching frontend tools and
-              technologies. I have professional work experience building
+              (work in progress) I am specializing in Modularized React
+              development and currently learning to write units and integration
+              tests.I spend my time experimenting and researching frontend tools
+              and technologies. I have professional work experience building
               user-interfaces and web applications, from scratch to deployment
               utilizing ReactJS, Redux, JavaScript ES6+, HTML5, CSS3, Chakra-UI,
               Material-UI, and other technologies.
@@ -119,13 +125,8 @@ function AboutMe() {
           <p>
             {/* check for "qualities of great leaders" Mention leadership roles and what they taught you*/}
             {/* Mention volunteering experience and what they taught you */}
-            Leadership(empathy, initiatives, team synergy, delegation) and
-            Volunteer experience: I am a Frontend Developer specializing in
-            React and JavaScript. I spend my time experimenting and researching
-            frontend tools and technologies. I have professional work experience
-            building user-interfaces and web applications, from scratch to
-            deployment utilizing ReactJS, Redux, JavaScript ES6+, HTML5, CSS3,
-            Chakra-UI, Material-UI, and other technologies.
+            (work in progress) - Leadership(empathy, initiatives, team synergy,
+            delegation) and Volunteer experience: 
           </p>
         </div>
       </div>
