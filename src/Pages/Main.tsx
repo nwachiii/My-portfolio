@@ -22,7 +22,8 @@ export const Main = () => {
       textAlign="center"
       w="100%"
       h="84vh"
-      mb={"-2em"}
+      mb={[8, 0, "-2em"]}
+      mt={[8, 0, 0]}
     >
       <AnimatePresence>
         <motion.div
@@ -48,25 +49,29 @@ export const Main = () => {
               }}
             >
               <Heading as="h1" size="2xl" lineHeight="64px">
-                <Text color="lightgray">
-                  Hello!&#128512; I'm <br />
+                <Text>
+                  <i>Hello!&#128512; I'm </i> <br />
                 </Text>
                 Emmanuel Nwachukwu
               </Heading>
             </motion.div>
 
             <Text
-              color="lightgray"
               maxW="460px"
               p={4}
               fontSize={{ base: "18px", md: "22px", lg: "24px" }}
+              lineHeight={['34px']}
             >
-              A Frontend Engineer whose goal is to create a stellar user
-              experience, smooth user interface, and straightforward internal
-              structures for a given product...
-              <Link to="/about">
-                <Text color="teal.500">Learn More</Text>
-              </Link>
+              <i>
+                A Frontend Engineer whose goal is to create stellar user
+                experience, smooth user interfaces, and straightforward internal
+                structures for a given product...
+              </i>
+              <Text color="teal.500" lineHeight="38px">
+                <Link to="/about">
+                  <i>Learn More &gt;</i>
+                </Link>
+              </Text>
             </Text>
 
             <SimpleGrid columns={[1, 2, 2]} spacing={[6, 8, 10]} mb={6}>

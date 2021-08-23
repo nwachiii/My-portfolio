@@ -29,6 +29,7 @@
   border-radius: 15px;
   object-fit: contain;
   margin: 2em auto 0.5em;
+  cursor: pointer
 }
 
 .img {
