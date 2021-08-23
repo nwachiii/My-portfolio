@@ -62,6 +62,12 @@ br {
     margin: -2.5em auto;
   }
   .text-wrap {
-    font-size: 16px;
-  }
+  text-align: left;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 2em;
+  margin: 2em 0;
+  word-spacing: 1px;
+  letter-spacing: 1.7px;
+}
 }

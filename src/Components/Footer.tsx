@@ -7,6 +7,7 @@ export const Footer = () => {
       color="light-gray"
       py={3}
       mt={8}
+      mb={4}
       justifyContent="center"
       borderTopWidth="1.2px"
       h="6vh"

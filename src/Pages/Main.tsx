@@ -9,6 +9,7 @@ import {
   SimpleGrid,
   Button,
 } from "@chakra-ui/react";
+import "./Main.css";
 
 import { MyProjects } from "../Components/Drawers/ProjectsDrawer";
 import { SocialMediaIcons } from "../Components/Icons/SocialMediaIcons";
@@ -24,7 +25,9 @@ export const Main = () => {
       h="84vh"
       mb={[8, 0, "-2em"]}
       mt={[8, 0, 0]}
+      className="main-wrapper"
     >
+      <div></div>
       <AnimatePresence>
         <motion.div
           initial={{ x: 500, opacity: 0, scale: 0.5 }}
@@ -60,7 +63,7 @@ export const Main = () => {
               maxW="460px"
               p={4}
               fontSize={{ base: "18px", md: "22px", lg: "24px" }}
-              lineHeight={['34px']}
+              lineHeight={["34px"]}
             >
               <i>
                 A Frontend Engineer whose goal is to create stellar user

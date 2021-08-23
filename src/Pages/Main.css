@@ -1,0 +1,8 @@
+.main-wrapper {
+  background: linear-gradient(rgba(0, 217, 255, 0.45), rgba(4, 13, 14, 0.952)),
+    url(../assets/imgs/about5.jpeg);
+  z-index: 1;
+  opacity: 9;
+
+  /* background-repeat: no-repeat; */
+}

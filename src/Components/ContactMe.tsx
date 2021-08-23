@@ -17,17 +17,11 @@ export const ContactMe = () => {
           isCentered
         >
           The end-users are seeking easy-to-use applications with modern,
-          robust, intuitive features. If your products aim for such seamless
-          experience, I'm the developer you're looking for &#128540;
-        </Text>
-        <Text
-          textAlign="left"
-          lineHeight="30px"
-          fontSize={["md", "lg", "xl"]}
-          px={4}
-        >
-          {" "}
-          Kindly Reach out. Let's talk!
+          robust, and intuitive features.
+          <p>
+            If your products aim for such seamless experience, then I'm the
+            developer you're looking for &#128540;
+          </p>
         </Text>
         <ContactIcons />
 
