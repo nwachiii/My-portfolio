@@ -2,7 +2,15 @@
   background: linear-gradient(rgba(0, 217, 255, 0.45), rgba(4, 13, 14, 0.952)),
     url(../assets/imgs/about5.jpeg);
   z-index: 1;
-  opacity: 9;
+  height: 100vh !important;
+  display: flex;
+  align-content: stretch;
 
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 740px) {
+  .main-wrapper {
+    background: transparent;
+  }
 }
