@@ -59,7 +59,7 @@ export const ProjectCards = ({projects}) => {
               >
                 <Tooltip label="View Code" aria-label="A tooltip">
                   <Link href={project.codeUrl} isExternal>
-                    <Icon as={HiOutlineCode} w={8} h={8} color="teal.500" />
+                    <Icon as={HiOutlineCode} w={8} h={8} color="teal.500"/>
                   </Link>
                 </Tooltip>
                 <Tooltip label="View Live" aria-label="A tooltip">

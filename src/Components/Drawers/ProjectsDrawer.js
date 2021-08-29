@@ -74,7 +74,7 @@ export const MyProjects = () => {
                   mt="-.5em"
                   color="teal.500"
                 />
-                ALL PROJECTS
+                PROJECTS
               </Heading>
               {isSmallerThan400px ? null : (
                 <Stack mt={[1.9, 2, 2]}>
