@@ -14,6 +14,7 @@ import {
 import { HiOutlineCode, HiOutlineEye, HiThumbUp } from "react-icons/hi";
 import "./CardStyles.css";
 import ReadMoreReact from "read-more-react";
+import { motion } from "framer-motion";
 
 export const ProjectCards = ({projects}) => {
   return (
@@ -27,11 +28,11 @@ export const ProjectCards = ({projects}) => {
       mx={[0, -5, -5]}
     >
       {projects.map((project) => (
-        <Box className="card__wrapper" mb={[4, 2, 10, 8]} cursor="pointer">
+        <Box className="card__wrapper" mb={[4, 2, 10, 8]}>
           <Box key={project._id} className="card__box">
             <VStack className="glass-effect" spacing={[4, 6]}>
               <Heading fontSize={["lg", "xl", "xl"]}>{project.title}</Heading>
-              <Text fontSize={["md", "lg", "xl"]} px={3}>
+              <Text fontSize={["md", "lg", "xl"]} px={3} cursor="pointer">
                 <ReadMoreReact
                   text={project.description}
                   min={45}
@@ -57,27 +58,42 @@ export const ProjectCards = ({projects}) => {
                 w="100%"
                 justifyContent="center"
               >
-                <Tooltip label="View Code" aria-label="A tooltip">
-                  <Link href={project.codeUrl} isExternal>
-                    <Icon as={HiOutlineCode} w={8} h={8} color="teal.500"/>
-                  </Link>
-                </Tooltip>
-                <Tooltip label="View Live" aria-label="A tooltip">
-                  <Link href={project.liveUrl} isExternal>
-                    <Icon as={HiOutlineEye} w={8} h={8} color="#9BDFAA" />
-                  </Link>
-                </Tooltip>
-                <Tooltip label="Like" aria-label="A tooltip">
-                  <Link>
-                    <Icon
-                      as={HiThumbUp}
-                      w={8}
-                      h={8}
-                      color="teal.500"
-                      cursor="pointer"
-                    />
-                  </Link>
-                </Tooltip>
+                <motion.div
+                  whileHover={{ scale: 1.25 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <Tooltip label="View Code" aria-label="A tooltip">
+                    <Link href={project.codeUrl} isExternal>
+                      <Icon as={HiOutlineCode} w={8} h={8} color="teal.500" />
+                    </Link>
+                  </Tooltip>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.25 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <Tooltip label="View Live" aria-label="A tooltip">
+                    <Link href={project.liveUrl} isExternal>
+                      <Icon as={HiOutlineEye} w={8} h={8} color="" />
+                    </Link>
+                  </Tooltip>
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.25 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <Tooltip label="Like" aria-label="A tooltip">
+                    <Link>
+                      <Icon
+                        as={HiThumbUp}
+                        w={8}
+                        h={8}
+                        color="teal.500"
+                        cursor="pointer"
+                      />
+                    </Link>
+                  </Tooltip>
+                </motion.div>
               </HStack>
             </VStack>
             <div className="big__circle"></div>

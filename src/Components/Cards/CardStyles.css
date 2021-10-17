@@ -12,17 +12,20 @@
 
 .big__circle {
   position: absolute;
-  top: 10%;
-  left: 15%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 300px;
   height: 210px;
-  background: rgba(74, 143, 89, 0.57);
+  /* background: rgba(74, 143, 89, 0.57); */
+  background: linear-gradient(180deg, rgba(74, 151, 118, 0.436) 73.86%, rgba(45, 64, 66, 0.952) 114.81%);
+
   border-radius: 50%;
   z-index: -1;
 }
 .glass-effect {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(68, 75, 95, 0.05);
   padding: 2em 3em;
   width: auto;
   height: auto;
@@ -32,7 +35,7 @@
   backdrop-filter: blur(45px);
   border: solid 0.1px rgba(0, 128, 128, 0.884);
   background-clip: padding-box;
-  box-shadow: 10px 10px 10px rgba(46, 68, 50, 0.1);
+  box-shadow: 10px 10px 10px rgba(68, 75, 95, 0.05);
 }
 
 @media screen and (max-width: 995px) {
