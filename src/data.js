@@ -3,7 +3,7 @@ export const clientProjectDetails = [
     _id: "1st-project",
     title: "Waist beads by Nora",
     description:
-      "Waist Beads by Nora is an ecommerce platform that designs, produces and deliver waist beads for all women irrespective of size, race, shape and colour.",
+      "Waist Beads by Nora is an ecommerce platform that designs, produces and deliver waist beads globally for all women irrespective of size, race, shape and colour.",
     stack: ["Redux", "CSS3", "ReactJs", "SASS"],
     codeUrl: "https://github.com/nwachiii",
     liveUrl: "https://waistbeadsbynora.com/",
