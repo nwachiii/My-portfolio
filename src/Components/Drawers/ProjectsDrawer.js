@@ -25,7 +25,7 @@ import { VscChevronDown, VscChevronRight } from "react-icons/vsc";
 import { ProjectCards } from "../Cards/Cards";
 import {
   clientProjectDetails,
-  clonedProjectDetails,
+  // clonedProjectDetails,
   personalProjectDetails,
 } from "../../data";
 import { motion } from "framer-motion";
@@ -35,7 +35,7 @@ export const MyProjects = () => {
   const [size] = React.useState("full");
   const [isSmallerThan400px] = useMediaQuery("(max-width: 400px)");
   const [clientProjects, setClientProjects] = useBoolean();
-  const [clonedProjects, setClonedProjects] = useBoolean();
+  // const [clonedProjects, setClonedProjects] = useBoolean();
   const [personalProjects, setPersonalProjects] = useBoolean();
 
   return (
@@ -147,6 +147,7 @@ export const MyProjects = () => {
                       stiffness: "20",
                       delay: 0.2,
                     }}
+                    className="mx-auto"
                   >
                     <ProjectCards projects={clientProjectDetails} />
                   </motion.div>
@@ -163,7 +164,7 @@ export const MyProjects = () => {
                     delay: 0.2,
                   }}
                 >
-                  <Flex cursor="pointer" onClick={setClonedProjects.toggle}>
+                  {/* <Flex cursor="pointer" onClick={setClonedProjects.toggle}>
                     <Icon
                       as={HiBriefcase}
                       w={5}
@@ -201,7 +202,7 @@ export const MyProjects = () => {
                 </motion.div>
                 {/* My projects page content comes in here */}
 
-                {clonedProjects ? (
+             {/*   {clonedProjects ? (
                   <motion.div
                     initial={{ y: "-10%", opacity: "0", scale: "0.4" }}
                     animate={{ y: 0, opacity: "1", scale: "1" }}
@@ -225,7 +226,7 @@ export const MyProjects = () => {
                     stiffness: "20",
                     delay: 0.3,
                   }}
-                >
+                > */}
                   <Flex cursor="pointer" onClick={setPersonalProjects.toggle}>
                     <Icon
                       as={HiBriefcase}
