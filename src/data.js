@@ -108,7 +108,7 @@ export const personalProjectDetails = [
     _id: "1st-project",
     title: "Portfolio v2",
     description:
-      "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "Personal portfolio containing projects I've worked on more recently",
     stack: ["React", "Chakra-UI", "Glassmorphism"],
     codeUrl: "https://github.com/nwachiii",
     liveUrl: "https://nwachiii.netlify.app",
@@ -117,7 +117,7 @@ export const personalProjectDetails = [
     _id: "2nd-project",
     title: "Portvolio v1",
     description:
-      "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+      "Personal portfolio containing other previous projects",
     stack: ["HTML", "CSS", "JavaScript"],
     codeUrl: "https://github.com/nwachiii/nwachukwuemmanuel",
     liveUrl: "https://nwachiii.github.io/nwachukwuemmanuel/",
