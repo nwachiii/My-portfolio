@@ -114,7 +114,7 @@ export const MyProjects = () => {
                       textAlign="center"
                       letterSpacing={["3px", ".2em", ".4em"]}
                     >
-                      CLIENT PROJECTS
+                      LIVE PROJECTS
                     </Heading>
 
                     {clientProjects ? (
